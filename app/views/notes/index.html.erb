@@ -3,4 +3,6 @@
 <% @notes.each do |note| %>
     <h2><%= note.title %></h2>
     <%= link_to 'Show Note', note_path(note) %>
+    <%= link_to 'Edit Note', edit_note_path(note) %>
+    <%= link_to 'Destroy Note', note, method: :delete %>
 <% end %>
